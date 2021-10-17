@@ -2,7 +2,7 @@
 
 ```
 
-apt install --install-recommends linux-generic-hwe-20.04
+apt install --install-recommends linux-generic-hwe-20.04 -y
 
 modprobe tcp_bbr
 echo "tcp_bbr" >> /etc/modules-load.d/modules.conf
