@@ -1,9 +1,12 @@
-# enable_bbr_on_ubuntu
+## enable_bbr_on_ubuntu
 
 ```
-
 apt install --install-recommends linux-generic-hwe-20.04 -y
+```
 
+# Main
+
+```
 modprobe tcp_bbr
 echo "tcp_bbr" >> /etc/modules-load.d/modules.conf
 echo "net.core.default_qdisc=fq" >> /etc/sysctl.conf
