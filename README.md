@@ -1,10 +1,10 @@
-## enable_bbr_on_ubuntu
+# enable_bbr_on_ubuntu
 
 ```
 apt install --install-recommends linux-generic-hwe-20.04 -y
 ```
 
-# Main
+## Main
 
 ```
 modprobe tcp_bbr
