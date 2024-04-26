@@ -122,3 +122,17 @@ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin 
 
 sudo docker run hello-world
 ```
+
+## swap
+```
+sudo swapoff -a
+sudo rm /swapfile
+
+sudo fallocate -l 1G /swapfile
+sudo chmod 600 /swapfile
+sudo mkswap /swapfile
+sudo swapon /swapfile
+sudo swapon --show
+
+echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+```
