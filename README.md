@@ -136,3 +136,13 @@ sudo swapon --show
 
 echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
 ```
+
+## nexttrace
+```
+curl nxtrace.org/nt |bash
+```
+
+## vps融合怪
+```
+curl -L https://gitlab.com/spiritysdx/za/-/raw/main/ecs.sh -o ecs.sh && chmod +x ecs.sh && bash ecs.sh
+```
