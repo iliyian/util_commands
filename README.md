@@ -135,6 +135,8 @@ sudo swapon /swapfile
 sudo swapon --show
 
 echo '/swapfile none swap sw 0 0' | sudo tee -a /etc/fstab
+
+sysctl vm.swappiness=60
 ```
 
 ## nexttrace
