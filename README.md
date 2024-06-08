@@ -148,3 +148,23 @@ curl nxtrace.org/nt |bash
 ```
 curl -L https://gitlab.com/spiritysdx/za/-/raw/main/ecs.sh -o ecs.sh && chmod +x ecs.sh && bash ecs.sh
 ```
+
+## acme.sh
+```
+# install
+curl https://get.acme.sh | sh -s email=my@example.com
+
+# issue
+# 在 .acme.sh/account.conf里面，
+# SAVED_CF_Key="***"
+# SAVED_CF_Email=my@example.com
+
+./.acme.sh/acme.sh --issue -d "example.com" -d "*.example.com" --dns dns_cf --keylength ec-256 --ecc
+
+# install cert
+./.acme.sh/acme.sh --installcert -d "example.com" --ecc --fullchain-file /where/to/save/crt --key-file /where/to/save/key --reloadcmd "what to do after install and renew"
+
+# renew cert
+./.acme.sh/acme.sh --renew --dns dns_cf -d "example.com" --ecc -f
+
+```
