@@ -229,3 +229,8 @@ net.netfilter.nf_conntrack_tcp_timeout_established = 180
 net.netfilter.nf_conntrack_tcp_timeout_close_wait = 30
 net.netfilter.nf_conntrack_tcp_timeout_fin_wait = 30
 ```
+
+# sign old commits
+```
+git rebase --exec 'GIT_COMMITTER_DATE="$(git log -1 --format=%at)" git commit --amend --no-edit -n -S' -i HEAD~n
+```
