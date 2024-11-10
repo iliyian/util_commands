@@ -239,5 +239,5 @@ git rebase --exec 'GIT_COMMITTER_DATE="$(git log -1 --format=%at)" git commit --
 ```
 sudo apt update
 sudo apt install language-pack-zh-hans language-pack-gnome-zh-hans -y
-sudo update-locale
+sudo update-locale LANG=zh_CN.UTF-8
 ```
