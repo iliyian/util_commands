@@ -234,3 +234,10 @@ net.netfilter.nf_conntrack_tcp_timeout_fin_wait = 30
 ```
 git rebase --exec 'GIT_COMMITTER_DATE="$(git log -1 --format=%at)" git commit --amend --no-edit -n -S' -i HEAD~n
 ```
+
+# switch to chinese
+```
+sudo apt update
+sudo apt install language-pack-zh-hans language-pack-gnome-zh-hans -y
+sudo update-locale
+```
