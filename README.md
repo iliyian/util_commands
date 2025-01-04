@@ -247,5 +247,6 @@ sudo update-locale LANG=zh_CN.UTF-8
 docker run --detach \
     --name watchtower \
     --volume /var/run/docker.sock:/var/run/docker.sock \
+    --restart always \
     containrrr/watchtower
 ```
