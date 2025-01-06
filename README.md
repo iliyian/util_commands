@@ -248,5 +248,5 @@ docker run --detach \
     --name watchtower \
     --volume /var/run/docker.sock:/var/run/docker.sock \
     --restart always \
-    containrrr/watchtower
+    containrrr/watchtower --run-once
 ```
