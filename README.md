@@ -228,6 +228,9 @@ net.netfilter.nf_conntrack_tcp_timeout_time_wait = 30
 net.netfilter.nf_conntrack_tcp_timeout_established = 180
 net.netfilter.nf_conntrack_tcp_timeout_close_wait = 30
 net.netfilter.nf_conntrack_tcp_timeout_fin_wait = 30
+
+net.core.default_qdisc = fq
+net.ipv4.tcp_congestion_control = bbr
 ```
 
 # sign old commits
