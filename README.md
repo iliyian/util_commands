@@ -245,12 +245,18 @@ sudo apt install language-pack-zh-hans language-pack-gnome-zh-hans -y
 sudo update-locale LANG=zh_CN.UTF-8
 ```
 
-# watchtower, once
+# watchtower
 ```
+# once
 docker run --rm \
   -v /var/run/docker.sock:/var/run/docker.sock \
   containrrr/watchtower \
   --run-once
+
+docker run --detach \
+    --name watchtower \
+    --volume /var/run/docker.sock:/var/run/docker.sock \
+    containrrr/watchtower
 ```
 
 # redis
