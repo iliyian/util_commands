@@ -167,6 +167,9 @@ curl https://get.acme.sh | sh -s email=my@example.com
 # renew cert
 ./.acme.sh/acme.sh --renew --dns dns_cf -d "example.com" --ecc -f
 
+# install cronjob
+./.acme.sh/acme.sh --install-cronjob
+
 ```
 
 ## optimizations
