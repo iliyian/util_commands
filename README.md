@@ -271,3 +271,24 @@ echo "deb [signed-by=/usr/share/keyrings/redis-archive-keyring.gpg] https://pack
 sudo apt-get update
 sudo apt-get install redis
 ```
+
+# php
+```
+# 1. 安装PPA管理工具
+sudo apt update
+sudo apt install software-properties-common
+
+# 2. 添加 PHP PPA
+sudo add-apt-repository ppa:ondrej/php
+
+# 3. 刷新软件包列表
+sudo apt update
+
+sudo apt install php8.3-fpm php8.3-cli php8.3-mysql php8.3-gd php8.3-curl php8.3-xml php8.3-mbstring php8.3-intl
+
+# 检查 PHP-FPM 服务是否正在运行
+systemctl status php8.3-fpm
+
+# 检查命令行版本
+php -v
+```
