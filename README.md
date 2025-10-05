@@ -292,3 +292,10 @@ systemctl status php8.3-fpm
 # 检查命令行版本
 php -v
 ```
+
+# mysql
+```
+sudo apt update
+sudo apt install mariadb-server
+sudo systemctl status mariadb
+```
