@@ -253,13 +253,13 @@ sudo update-locale LANG=zh_CN.UTF-8
 # once
 docker run --rm \
   -v /var/run/docker.sock:/var/run/docker.sock \
-  containrrr/watchtower \
+  nickfedor/watchtower \
   --run-once
 
 docker run --detach \
     --name watchtower \
     --volume /var/run/docker.sock:/var/run/docker.sock \
-    containrrr/watchtower
+    nickfedor/watchtower
 ```
 
 # redis
