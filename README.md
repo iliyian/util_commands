@@ -324,3 +324,10 @@ sudo apt update
 sudo apt install mariadb-server
 sudo systemctl status mariadb
 ```
+
+## nvim
+```
+sudo add-apt-repository ppa:neovim-ppa/unstable
+sudo apt update
+sudo apt install neovim
+```
