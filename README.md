@@ -327,7 +327,18 @@ sudo systemctl status mariadb
 
 ## nvim
 ```
-sudo add-apt-repository ppa:neovim-ppa/unstable
-sudo apt update
-sudo apt install neovim
+# 1. 下载压缩包
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.tar.gz
+
+# 2. 清理旧的安装目录 (如果有)
+sudo rm -rf /opt/nvim
+
+# 3. 解压到 /opt 目录 (标准做法)
+sudo tar -C /opt -xzf nvim-linux-x86_64.tar.gz
+
+# 4. 建立软链接 (把命令连到系统路径)
+sudo ln -sf /opt/nvim-linux-x86_64/bin/nvim /usr/local/bin/nvim
+
+# 5. 删除压缩包 (省空间)
+rm nvim-linux-x86_64.tar.gz
 ```
